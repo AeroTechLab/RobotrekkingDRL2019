@@ -1,0 +1,8 @@
+
+# Running the 4 wheels environment
+python -m spinup.run ppo --exp_name ppoRover4W --env Rover4W-v0 --clip_ratio 0.1 --hid[h] [64,64] --act tf.nn.tanh --seed 10 --dt --cpu 4 --epochs 4000 --gamma 0.99 --pi_lr 0.00005 --vf_lr 0.0001 
+
+
+# Running the 3 wheels environment
+python -m spinup.run ppo --exp_name ppoRover3W --env Rover3W-v0 --clip_ratio 0.1 --hid[h] [64,64] --act tf.nn.tanh --seed 10 --dt --cpu 4 --epochs 4000 --gamma 0.99 --pi_lr 0.00005 --vf_lr 0.0001 
+
